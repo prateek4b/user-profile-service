@@ -12,4 +12,10 @@ public class HelloController {
 
     }
 
+    @GetMapping("/sayRedirected")
+    public String sayHelloRedirected() {
+        return "HelloRedirected";
+
+    }
+
 }
