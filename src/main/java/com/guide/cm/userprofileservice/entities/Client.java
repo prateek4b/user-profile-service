@@ -1,9 +1,8 @@
 package com.guide.cm.userprofileservice.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import org.hibernate.validator.constraints.UniqueElements;
+
+import javax.persistence.*;
 
 @Entity
 public class Client {
@@ -14,6 +13,7 @@ public class Client {
 
     private String name;
 
+    @Column(unique = true)
     private String gstNo;
 
     private String scheme;
