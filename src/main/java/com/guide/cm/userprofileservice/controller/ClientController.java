@@ -13,7 +13,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@RestController("client")
+@RestController
+@RequestMapping("client")
 public class ClientController {
 
     @Autowired
